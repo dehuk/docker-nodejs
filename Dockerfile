@@ -8,7 +8,7 @@ RUN \
     # Install ruby
     apk --no-cache add ruby ruby-dev ruby-bundler ruby-json ruby-irb ruby-rake ruby-bigdecimal && \
 
-    apk --no-cache add make libxml2 libxslt-dev g++ && \
+    apk --no-cache add make libxml2 libxslt-dev g++ libtool automake autoconf nasm && \
 
     # clear after installation
     rm -rf /var/cache/apk/*

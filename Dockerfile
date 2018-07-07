@@ -8,7 +8,7 @@ RUN \
     # Install ruby
     apk --no-cache add ruby ruby-dev ruby-bundler ruby-json ruby-irb ruby-rake ruby-bigdecimal && \
 
-    apk --no-cache add --virtual build-dependencies make libxml2 libxslt-dev g++ && \
+    apk --no-cache add make libxml2 libxslt-dev g++ && \
 
     # clear after installation
     rm -rf /var/cache/apk/*
@@ -25,10 +25,7 @@ RUN \
     npm install -g gulp-cli
 
 # Clear image
-RUN \
-    apk del build-dependencies && \
-
-    gem cleanup
+RUN gem cleanup
 
 # Create work directory
 RUN mkdir -p /home/projects

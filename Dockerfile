@@ -6,7 +6,7 @@ RUN \
     apk update && apk upgrade && \
 
     # Install ruby
-    apk --no-cache add ruby ruby-dev ruby-bundler ruby-json ruby-irb ruby-rake ruby-bigdecimal && \
+    apk --no-cache add yarn ruby ruby-dev ruby-bundler ruby-json ruby-irb ruby-rake ruby-bigdecimal && \
 
     apk --no-cache add make libxml2 libxslt-dev g++ libtool automake autoconf nasm && \
 

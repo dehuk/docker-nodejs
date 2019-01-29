@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:11.8.0-alpine
 
 # Install packages
 RUN \

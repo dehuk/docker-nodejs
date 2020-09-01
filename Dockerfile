@@ -16,10 +16,10 @@ RUN \
 # Insatll dependencies
 RUN \
     # Install gem jekyll
-    gem install jekyll --no-rdoc --no-ri && \
+    gem install jekyll && \
 
     # Install gem jekyll
-    gem install jekyll-contentblocks --no-rdoc --no-ri && \
+    gem install jekyll-contentblocks && \
 
     # Install gulp
     npm install -g gulp-cli
